@@ -1,47 +1,8 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 button {
   padding: 10px 0px;
   width: 100px;
   border: none;
-  box-shadow: 0px 0px 3px 2px #a0a0a0;
+  box-shadow: 0px 0px 3px 2px #646464;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -52,9 +13,18 @@ button:hover {
 }
 
 .App {
+  text-align: center;
   border: 1px solid #fcfcfc;
-  background-color: #d4d4d4;
+  background: url(https://media.4-paws.org/8/e/4/3/8e43d7de45a251738c5c8126e0fc24aa121a1cf9/VIER%20PFOTEN_2014-08-08_005-1918x1328-1918x1328.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 15px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .count {
@@ -84,8 +54,8 @@ button:hover {
   margin: 10px auto;
   width: 100px;
   border-radius: 10px;
-  background: #ecf5fc;
-  box-shadow: 0px 0px 2px 3px #a2adad;
+  background: rgba(220, 220, 230, 0.8);
+  box-shadow: 0px 0px 2px 3px #4d4d4d;
 }
 
 .counter-flex {
@@ -97,8 +67,9 @@ button:hover {
 
 .container {
   width: 270px;
+  height: 205px;
   margin: 0 auto;
-  background: #cbecf5;
+  background: rgba(10, 10, 10, 0.2);
   padding: 10px;
   border-radius: 10px;
 }
