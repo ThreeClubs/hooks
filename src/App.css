@@ -14,17 +14,29 @@ button:hover {
 
 .App {
   text-align: center;
-  border: 1px solid #fcfcfc;
-  background: url(https://media.4-paws.org/8/e/4/3/8e43d7de45a251738c5c8126e0fc24aa121a1cf9/VIER%20PFOTEN_2014-08-08_005-1918x1328-1918x1328.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 15px;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+}
+
+.App::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+   background-image: url(https://media.4-paws.org/8/e/4/3/8e43d7de45a251738c5c8126e0fc24aa121a1cf9/VIER%20PFOTEN_2014-08-08_005-1918x1328-1918x1328.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  
 }
 
 .count {
@@ -72,4 +84,5 @@ button:hover {
   background: rgba(10, 10, 10, 0.2);
   padding: 10px;
   border-radius: 10px;
+  position: relative;
 }
