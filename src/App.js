@@ -9,7 +9,6 @@ function App() {
   const [decrem, setDecrem] = useState(0);
   // when a state value or props value changes a component re-renders
   const [sum, setSum] = useState(0);
-  const [temp, setTemp] = useState();
 
   function updateCount() {
     setCount(count + 1);
@@ -24,13 +23,14 @@ function App() {
     setCount(0);
   }
 
-  useEffect(function () {
-    console.log(`The count is currently at ${count}`);
-    setSum(sum+ count);
-     console.log(`The sum is at ${sum}`);
-  }, [count]
+  useEffect(
+    function () {
+      console.log(`The count is currently at ${count}`);
+      setSum(sum + count);
+      console.log(`The sum is at ${sum}`);
+    },
+    [sum, count]
   );
- 
 
   useEffect(function () {
     console.log("Only triggered once when component mounts");
